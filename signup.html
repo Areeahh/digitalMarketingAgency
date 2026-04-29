@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <a href="../index.html"><h2>Digital Marketing Agency</h2></a>
+  <!-- ADD BUTTON HERE -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- ================= SIGNUP FORM ================= -->
+<div class="page">
+
+    <div class="form-container">
+        <h2>Create Account</h2>
+
+        <form>
+            <div>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input type="password" placeholder="Enter password" required>
+            </div>
+
+            <div>
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm password" required>
+            </div>
+
+            <button type="submit">Signup</button>
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-container">
+        <div>
+            <h3>Digital Marketing Agency</h3>
+            <p>Join us and grow your business digitally.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../jsFile/jsFunctions.js"></script>
+
+</body>
+</html>

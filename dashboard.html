@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <a href="../index.html"><h2>Digital Marketing Agency</h2></a>
+  <!-- ADD BUTTON HERE -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Logout</a></li>
+    </ul>
+</nav>
+
+<!-- ================= PAGE CONTENT ================= -->
+<div class="page">
+
+    <h1>Dashboard</h1>
+    <p>Overview of your marketing campaigns and performance.</p>
+
+    <!-- ================= TABLE ================= -->
+    <div class="table-container">
+
+        <!-- inline CSS for width control (as required) -->
+        <table style="min-width: 600px; max-width: 1000px;">
+
+            <thead>
+                <tr>
+                    <th>Campaign</th>
+                    <th>Platform</th>
+                    <th>Status</th>
+                    <th>Budget</th>
+                    <th>Performance</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>SEO Growth</td>
+                    <td>Google</td>
+                    <td>Active</td>
+                    <td>$500</td>
+                    <td>High</td>
+                </tr>
+
+                <tr>
+                    <td>Social Boost</td>
+                    <td>Instagram</td>
+                    <td>Active</td>
+                    <td>$300</td>
+                    <td>Medium</td>
+                </tr>
+
+                <tr>
+                    <td>Ad Campaign</td>
+                    <td>Facebook</td>
+                    <td>Paused</td>
+                    <td>$200</td>
+                    <td>Low</td>
+                </tr>
+
+                <tr>
+                    <td>Email Reach</td>
+                    <td>Email</td>
+                    <td>Active</td>
+                    <td>$150</td>
+                    <td>High</td>
+                </tr>
+
+                <tr>
+                    <td>Content Strategy</td>
+                    <td>Blog</td>
+                    <td>Completed</td>
+                    <td>$250</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-container">
+
+        <div>
+            <h3>Dashboard</h3>
+            <p>Track and manage your campaigns efficiently.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="services.html">Services</a></p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="../jsFile/jsFunctions.js"></script>
+
+</body>
+</html>

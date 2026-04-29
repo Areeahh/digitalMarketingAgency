@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="../cssFile/globalStyles.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <a href="../index.html"><h2>Digital Marketing Agency</h2></a>
+  <!-- ADD BUTTON HERE -->
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="login.html">Login</a></li>
+    </ul>
+</nav>
+
+<!-- ================= CONTACT FORM ================= -->
+<div class="page">
+
+    <div class="form-container">
+        <h2>Contact Us</h2>
+        <p>Have questions? Send us a message.</p>
+
+        <form>
+
+            <div>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label>Service Interested In</label>
+                <select required>
+                    <option value="">Select a service</option>
+                    <option>SEO Optimization</option>
+                    <option>Social Media Marketing</option>
+                    <option>Paid Advertising</option>
+                    <option>Content Marketing</option>
+                    <option>Email Marketing</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Message</label>
+                <textarea rows="4" placeholder="Write your message..." required></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <div class="footer-container">
+
+        <div>
+            <h3>Digital Marketing Agency</h3>
+            <p>We’re here to help your business grow.</p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+            <p><a href="../index.html">Home</a></p>
+            <p><a href="services.html">Services</a></p>
+            <p><a href="dashboard.html">Dashboard</a></p>
+        </div>
+
+        <div>
+            <h3>Contact Info</h3>
+            <p>Email: info@dma.com</p>
+            <p>Phone: +123456789</p>
+        </div>
+
+    </div>
+</footer>
+
+<script src="../jsFile/jsFunctions.js"></script>
+
+</body>
+</html>

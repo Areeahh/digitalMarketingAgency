@@ -1,0 +1,227 @@
+/* =========================================================
+   DESIGN SYSTEM
+========================================================= */
+:root {
+  --brand-primary-color: #2563eb;
+  --brand-secondary-color: #1e40af;
+  --brand-third-color: #38bdf8;
+  --brand-fourth-color: #0ea5e9;
+  --brand-accent-color: #f59e0b;
+
+  --bg-main: #f8fafc;
+  --bg-card: #ffffff;
+
+  --text-primary-color: #111827;
+  --text-secondary-color: #374151;
+  --text-muted-color: #6b7280;
+  --text-focus-color: #2563eb;
+  --text-highlighted-color: #f59e0b;
+
+  --border-primary-color: #e5e7eb;
+  --border-secondary-color: #d1d5db;
+  --border-muted-color: #9ca3af;
+  --border-focus-color: #2563eb;
+  --border-highlighted-color: #f59e0b;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+
+  --transition: 0.3s ease;
+}
+
+/* =========================================================
+   GLOBAL BASE
+========================================================= */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg-main);
+  color: var(--text-primary-color);
+}
+
+/* =========================================================
+   BUTTON SYSTEM
+========================================================= */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: var(--brand-primary-color);
+  color: white;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button:hover {
+  background: var(--brand-secondary-color);
+}
+
+/* =========================================================
+   LINK BUTTON
+========================================================= */
+.link-button {
+  text-decoration: none;
+  padding: 8px 14px;
+  background: var(--brand-primary-color);
+  color: white;
+  border-radius: var(--radius-sm);
+}
+
+.link-button:hover {
+  background: var(--brand-secondary-color);
+}
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-primary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
+
+nav a:hover {
+  color: var(--brand-primary-color);
+}
+
+/* =========================================================
+   PAGE
+========================================================= */
+.page {
+  padding: 20px;
+}
+
+/* =========================================================
+   CARD SYSTEM
+========================================================= */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background: var(--bg-card);
+  padding: 16px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: var(--transition);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: var(--radius-sm);
+}
+
+/* =========================================================
+   FORM SYSTEM
+========================================================= */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-primary-color);
+  border-radius: var(--radius-sm);
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--border-focus-color);
+}
+
+/* =========================================================
+   TABLE SYSTEM
+========================================================= */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th {
+  background: var(--brand-primary-color);
+  color: white;
+  padding: 10px;
+}
+
+table td {
+  padding: 10px;
+  border: 1px solid var(--border-primary-color);
+}
+
+table tbody tr:nth-child(odd) {
+  background: #f1f5f9;
+}
+
+table tbody tr:nth-child(even) {
+  background: #e2e8f0;
+}
+
+table tbody tr:hover {
+  background: #cbd5f5;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+  background: var(--bg-card);
+  padding: 20px;
+  margin-top: 30px;
+  border-top: 1px solid var(--border-primary-color);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
